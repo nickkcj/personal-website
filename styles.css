@@ -1,2 +1,9 @@
+.profile-img {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Make sure width and height are the same */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block;
+}
 
 
