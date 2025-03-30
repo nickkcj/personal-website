@@ -1,16 +1,13 @@
 aside {
     display: flex;
     flex-direction: column;
-    background-color: wheat;
-    padding: 2rem;
+    align-items: center;
+    background-color: rgb(0, 92, 120);
+    padding: 0.2rem;
     width: 250px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
+    min-height: 100vh;
     overflow-y: auto;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
   }
 
 header {
@@ -20,10 +17,67 @@ header {
     text-align: center;
 }
 
-.profile-img {
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Nunito", sans-serif;;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(243, 247, 236);
+}
+
+aside img {
     width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
     height: 100px;
     border-radius: 50%;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icons .fas {
+    color: white;
+    text-decoration: none;
+} 
+.social-icons .fab {
+    display: inline;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+
+.social-icons a {
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block; /* Ensures transform works */
+    margin-right: 10px; /* Add margin-right */
+    margin-top: 15px;
+}
+
+.social-icons a:last-child {
+    margin-right: 0; /* Remove margin-right for the last icon */
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a i { /* Make sure icons don't break */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover i {
+    transform: scale(1.1);
 }
 
 .horizontal-menu {
@@ -31,6 +85,7 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
+    align-self: center;
     gap: 20px;
 }
 
@@ -50,16 +105,74 @@ header {
     border-radius: 5px;
 }
 
+.horizontal-menu i.fas {
+    margin-right: 5px;
+}
+
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    gap: 20px;
+    padding: 0.5rem 1rem;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    height: 50px;
+}
+
+aside h1 {
+    color: white;
+    margin: 0;
+}
+
+aside p {
+    color: white;
+    margin: 0;
+}
+
+#about h2 {
+    color: #14506c; /* Darker teal */
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#about p {
+    padding: 10px 10px;
+    margin: 20px auto; /* Centers horizontally */
+}
+#about {
+    background: #e3f2fd; /* Very light blue */
+    border-radius: 20px; /* Curvy edges */
+    padding: 20px; /* Space inside */
+    margin: 20px 15px; /* Space around */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+
+#skills {
+    margin-left: 15px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #329bbe; /* Lighter teal */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.skills-list li:hover {
+    background: #14506c; /* Darker teal */
+    transform: scale(1.1);
 }
