@@ -1,0 +1,244 @@
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    background-color: rgb(243, 247, 236);
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 250px);
+    position: fixed;
+    top: 0;
+    left: 283px;
+    right: 10px;
+    z-index: 1000;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 92, 120);
+    padding: 1rem;
+    width: 250px;
+    min-height: 100vh;
+    overflow-y: auto;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+aside:hover {
+    transform: scale(1.01);
+}
+
+aside img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+aside img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+aside h1, aside p {
+    color: white;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.social-icons .fas {
+    color: white;
+}
+
+.social-icons .fab {
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(243, 247, 236);
+    margin-left: 260px;
+    padding: 2rem;
+    padding-top: 0;
+    padding-left: 20px;
+    margin-top: 0px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+main:hover {
+    background-color: #f0f8ff;
+}
+
+.social-icons a {
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #329bbe;
+}
+
+.horizontal-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    gap: 20px;
+}
+
+.horizontal-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.horizontal-menu a:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+#about {
+    background: #e3f2fd;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(100% - 40px);
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#about:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#skills h2 {
+    margin-left: 60px;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.skills-list {
+    margin-left: 60px;
+    padding-left: 0px;
+}
+
+.skills-list li {
+    background: linear-gradient(135deg, #329bbe, #14506c);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, background 0.3s, box-shadow 0.3s ease-in-out;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-list li:hover {
+    background: linear-gradient(135deg, #14506c, #0b3a4a);
+    transform: scale(1.15);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#projects h2 {
+    margin-left: 60px;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.project-card {
+    background: linear-gradient(135deg, #ffffff, #f0f8ff);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    margin-left: 60px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    color: rgb(0, 92, 120);
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #329bbe;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #14506c;
+    transform: scale(1.1);
+}
+
+.project-card h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: #14506c;
+}
+
+.project-card p {
+    color: black;
+}
