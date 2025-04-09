@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: "Nunito", sans-serif;
-    background-color: rgb(243, 247, 236);
+    background-color: #f0f8ff;
     color: #333;
 }
 
@@ -12,7 +12,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f9fa;
+    background-color: white;
     padding: 1rem;
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -94,6 +94,7 @@ main {
     margin-left: 260px;
     padding: 2rem;
     padding-top: 0;
+    padding-bottom: 0;
     padding-left: 20px;
     margin-top: 0px;
     transition: background-color 0.3s ease-in-out;
@@ -312,5 +313,152 @@ footer {
     height: 50px;
 }
 
-
+/* Tablets e telas menores (até 1024px) */
+@media (max-width: 1024px) {
+    aside {
+      position: relative;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1rem;
+    }
   
+    aside img {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 80px;
+      height: 80px;
+    }
+  
+    aside h1, aside p {
+      font-size: 1rem;
+    }
+  
+    nav {
+      left: 0;
+      right: 0;
+      width: 100%;
+      position: relative;
+      margin-top: 10px;
+    }
+  
+    main {
+      margin-left: 0;
+      padding: 1rem;
+    }
+  
+    #about,
+    #skills h2,
+    .skills-list,
+    #projects h2,
+    .project-card,
+    #experience h2,
+    .timeline {
+      margin-left: 0;
+    }
+  
+    .horizontal-menu {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  
+  /* Celulares (até 768px) */
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    aside {
+      position: relative;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: none;
+      padding: 1rem 0;
+      z-index: auto;
+    }
+  
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        border-radius: 0;
+    }
+    
+  
+    main {
+      margin-left: 0;
+      padding: 1rem;
+    }
+  
+    #about,
+    .project-card,
+    .timeline,
+    #skills h2,
+    #projects h2,
+    #experience h2 {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  
+    .skills-list {
+      margin-left: 0;
+    }
+  
+    .horizontal-menu {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .project-card {
+      display: block;
+      width: 90%;
+      margin: 1rem auto;
+    }
+  
+    .timeline {
+      padding-left: 1rem;
+    }
+  }
+  
+  
+  /* Celulares pequenos (até 480px) */
+  @media (max-width: 480px) {
+    #about h2,
+    #skills h2,
+    #projects h2,
+    #experience h2 {
+      font-size: 1.5rem;
+      margin-left: 0;
+    }
+  
+    .project-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .timeline-item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .skills-list {
+      margin-left: 0;
+    }
+  
+    .skills-list li {
+      margin-bottom: 10px;
+    }
+  }
+  
+
+
