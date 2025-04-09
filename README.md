@@ -20,7 +20,6 @@ This is my personal portfolio website where I showcase my projects, skills, and 
 📁 project-folder
 │-- 📂 assets/       # Images, icons, and other assets
 │-- 📂 css/          # Stylesheets
-│-- 📂 js/           # JavaScript files
 │-- 📄 index.html    # Main HTML file
 ```
 
