@@ -7,11 +7,9 @@ This is my personal portfolio website where I showcase my projects, skills, and 
 
 - **HTML** 🏗️ - Structure of the website
 - **CSS** 🎨 - Styling and layout
-- **JavaScript** ⚡ - Interactivity and dynamic elements
 
 ## 🎯 Features
 ✅ Responsive design for all devices 📱💻
-✅ Smooth animations and transitions ✨
 ✅ Interactive elements for better user experience 🎭
 ✅ Organized and clean code for easy maintenance 🧹
 
@@ -19,8 +17,7 @@ This is my personal portfolio website where I showcase my projects, skills, and 
 ```
 📁 project-folder
 │-- 📂 assets/       # Images, icons, and other assets
-│-- 📂 css/          # Stylesheets
-│-- 📂 js/           # JavaScript files
+│-- 📂 css/          # Stylesheets           
 │-- 📄 index.html    # Main HTML file
 ```
 
@@ -34,4 +31,4 @@ This is my personal portfolio website where I showcase my projects, skills, and 
 
 ## 🛠️ Future Improvements
 - Implement a dark mode toggle 🌙
-- Enhance animations and user interactions 🎭
+
