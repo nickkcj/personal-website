@@ -17,7 +17,7 @@ This is my personal portfolio website where I showcase my projects, skills, and 
 ```
 📁 project-folder
 │-- 📂 assets/       # Images, icons, and other assets
-│-- 📂 css/          # Stylesheets           
+│-- 📂 css/          # Stylesheets
 │-- 📄 index.html    # Main HTML file
 ```
 
